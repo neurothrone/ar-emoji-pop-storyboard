@@ -14,6 +14,11 @@
 		2F3580552958E380008D3936 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F3580532958E380008D3936 /* Main.storyboard */; };
 		2F3580572958E381008D3936 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F3580562958E381008D3936 /* Assets.xcassets */; };
 		2F35805A2958E381008D3936 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F3580582958E381008D3936 /* LaunchScreen.storyboard */; };
+		2F3580662958F136008D3936 /* Die.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2F3580612958F136008D3936 /* Die.wav */; };
+		2F3580672958F136008D3936 /* GameStart.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2F3580622958F136008D3936 /* GameStart.wav */; };
+		2F3580682958F136008D3936 /* Collect.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2F3580632958F136008D3936 /* Collect.wav */; };
+		2F3580692958F136008D3936 /* Spawn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2F3580642958F136008D3936 /* Spawn.wav */; };
+		2F35806A2958F136008D3936 /* GameOver.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2F3580652958F136008D3936 /* GameOver.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +30,11 @@
 		2F3580542958E380008D3936 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2F3580562958E381008D3936 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F3580592958E381008D3936 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2F3580612958F136008D3936 /* Die.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Die.wav; sourceTree = "<group>"; };
+		2F3580622958F136008D3936 /* GameStart.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = GameStart.wav; sourceTree = "<group>"; };
+		2F3580632958F136008D3936 /* Collect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Collect.wav; sourceTree = "<group>"; };
+		2F3580642958F136008D3936 /* Spawn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Spawn.wav; sourceTree = "<group>"; };
+		2F3580652958F136008D3936 /* GameOver.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = GameOver.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +72,23 @@
 				2F35804F2958E380008D3936 /* Scene.swift */,
 				2F3580512958E380008D3936 /* ViewController.swift */,
 				2F3580532958E380008D3936 /* Main.storyboard */,
-				2F3580562958E381008D3936 /* Assets.xcassets */,
 				2F3580582958E381008D3936 /* LaunchScreen.storyboard */,
+				2F3580562958E381008D3936 /* Assets.xcassets */,
+				2F3580602958F136008D3936 /* SoundEffects */,
 			);
 			path = "EmojiPop-Storyboard";
+			sourceTree = "<group>";
+		};
+		2F3580602958F136008D3936 /* SoundEffects */ = {
+			isa = PBXGroup;
+			children = (
+				2F3580612958F136008D3936 /* Die.wav */,
+				2F3580622958F136008D3936 /* GameStart.wav */,
+				2F3580632958F136008D3936 /* Collect.wav */,
+				2F3580642958F136008D3936 /* Spawn.wav */,
+				2F3580652958F136008D3936 /* GameOver.wav */,
+			);
+			path = SoundEffects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,8 +150,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F35804E2958E380008D3936 /* Scene.sks in Resources */,
+				2F3580672958F136008D3936 /* GameStart.wav in Resources */,
+				2F35806A2958F136008D3936 /* GameOver.wav in Resources */,
+				2F3580662958F136008D3936 /* Die.wav in Resources */,
 				2F35805A2958E381008D3936 /* LaunchScreen.storyboard in Resources */,
 				2F3580572958E381008D3936 /* Assets.xcassets in Resources */,
+				2F3580682958F136008D3936 /* Collect.wav in Resources */,
+				2F3580692958F136008D3936 /* Spawn.wav in Resources */,
 				2F3580552958E380008D3936 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,7 +319,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4BP826FJGX;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "AR experience requires access to camera";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -321,7 +349,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4BP826FJGX;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "AR experience requires access to camera";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
